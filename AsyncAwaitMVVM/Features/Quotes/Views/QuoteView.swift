@@ -21,7 +21,6 @@ struct QuoteView: View {
             
             Text(makeAttribute(title: "Character", label: item.character))
             Text(makeAttribute(title: "Quotes", label: item.quote))
-                .lineLimit(2)
         }
         .padding()
         .foregroundColor(.black)

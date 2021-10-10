@@ -14,7 +14,7 @@ struct Quote: Decodable {
 }
 
 extension Quote {
-    static let dummyDate: [Quote] = [
+    static let dummyData: [Quote] = [
         Quote(anime: "Anime 1", character: "Character 1", quote: "Random Quote 1"),
         Quote(anime: "Anime 2", character: "Character 2", quote: "Random Quote 2"),
         Quote(anime: "Anime 3", character: "Character 3", quote: "Random Quote 3"),

@@ -17,6 +17,7 @@
 		AD73AB3427133DE900615B20 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD73AB3327133DE900615B20 /* QuoteView.swift */; };
 		AD73AB372713425F00615B20 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD73AB362713425F00615B20 /* QuoteService.swift */; };
 		AD73AB3A2713496700615B20 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD73AB392713496700615B20 /* QuoteViewModel.swift */; };
+		AD73AB3F27134FA000615B20 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD73AB3E27134FA000615B20 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AD73AB3327133DE900615B20 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		AD73AB362713425F00615B20 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
 		AD73AB392713496700615B20 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		AD73AB3E27134FA000615B20 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,8 @@
 		AD73AB18271335BC00615B20 /* AsyncAwaitMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				AD73AB3B27134EDE00615B20 /* Base */,
 				AD73AB2A2713364500615B20 /* Features */,
-				AD73AB27271335FF00615B20 /* Constants */,
 				AD73AB19271335BC00615B20 /* AsyncAwaitMVVMApp.swift */,
 				AD73AB1B271335BC00615B20 /* ContentView.swift */,
 				AD73AB1D271335BF00615B20 /* Assets.xcassets */,
@@ -149,6 +151,31 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		AD73AB3B27134EDE00615B20 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD73AB3C27134EEE00615B20 /* Views */,
+				AD73AB27271335FF00615B20 /* Constants */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AD73AB3C27134EEE00615B20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD73AB3D27134F0500615B20 /* Loading */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD73AB3D27134F0500615B20 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				AD73AB3E27134FA000615B20 /* LoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +254,7 @@
 				AD73AB1C271335BC00615B20 /* ContentView.swift in Sources */,
 				AD73AB1A271335BC00615B20 /* AsyncAwaitMVVMApp.swift in Sources */,
 				AD73AB292713360A00615B20 /* APIConstants.swift in Sources */,
+				AD73AB3F27134FA000615B20 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 		AD73AB1C271335BC00615B20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD73AB1B271335BC00615B20 /* ContentView.swift */; };
 		AD73AB1E271335BF00615B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD73AB1D271335BF00615B20 /* Assets.xcassets */; };
 		AD73AB21271335BF00615B20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD73AB20271335BF00615B20 /* Preview Assets.xcassets */; };
+		AD73AB292713360A00615B20 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD73AB282713360A00615B20 /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AD73AB1B271335BC00615B20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD73AB1D271335BF00615B20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD73AB20271335BF00615B20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD73AB282713360A00615B20 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		AD73AB18271335BC00615B20 /* AsyncAwaitMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				AD73AB27271335FF00615B20 /* Constants */,
 				AD73AB19271335BC00615B20 /* AsyncAwaitMVVMApp.swift */,
 				AD73AB1B271335BC00615B20 /* ContentView.swift */,
 				AD73AB1D271335BF00615B20 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				AD73AB20271335BF00615B20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD73AB27271335FF00615B20 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AD73AB282713360A00615B20 /* APIConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				AD73AB1C271335BC00615B20 /* ContentView.swift in Sources */,
 				AD73AB1A271335BC00615B20 /* AsyncAwaitMVVMApp.swift in Sources */,
+				AD73AB292713360A00615B20 /* APIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

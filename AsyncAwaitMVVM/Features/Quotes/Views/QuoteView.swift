@@ -8,25 +8,23 @@
 import SwiftUI
 
 struct QuoteView: View {
+    let item: Quote
+    
     var body: some View {
-        List {
-            ForEach(Quote.dummyData, id: \.anime) { item in
-                VStack(alignment: .leading, spacing: 8) {
-                    HStack {
-                        Image(systemName: "tv")
-                            .font(.caption.bold())
-                        
-                        Text(item.anime)
-                    }
-                    
-                    Text(makeAttribute(title: "Character", label: item.character))
-                    Text(makeAttribute(title: "Quotes", label: item.quote))
-                        .lineLimit(2)
-                }
-                .padding()
-                .foregroundColor(.black)
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Image(systemName: "tv")
+                    .font(.caption.bold())
+                
+                Text(item.anime)
             }
+            
+            Text(makeAttribute(title: "Character", label: item.character))
+            Text(makeAttribute(title: "Quotes", label: item.quote))
+                .lineLimit(2)
         }
+        .padding()
+        .foregroundColor(.black)
     }
     
     private func makeAttribute(title: String, label: String) -> AttributedString {
@@ -45,6 +43,6 @@ struct QuoteView: View {
 
 struct QuoteView_Previews: PreviewProvider {
     static var previews: some View {
-        QuoteView()
+        QuoteView(item: Quote.dummyData.first!)
     }
 }
